@@ -25,23 +25,44 @@ Our Hero (Me & you) is trying to improve but doesn't have a proper tool to track
 
 ## Features
 
-### Goal Tracking
+### Goal Tracking ✅ Done
 - Goals broken down into steps (like a JIRA board)
 - Steps can be moved to: To Do / In Progress / Done / Blocked
 - Show progress % against each goal
 - Dashboard to see everything at once
+- Deadlines on both goals and steps
 
-### Gamification
-- With each step completed → Game mechanic triggered
-- Give points & Badge for added consistency
-- Added points / Badges for consistency
+### Gamification ✅ Partially Done
+- Points awarded when a step is marked Done (10 pts per step)
+- Points removed if step is moved back from Done
+- Total points shown on dashboard
+- Badges — not yet implemented
 
-### AI Integration
-- Ask AI to break a goal into steps
-- "Describe your issue" input → for context to AI
+### AI Integration ✅ Done
+- Ask AI to break a goal into steps (GPT-4o-mini via server-side API route)
+- "Describe your current situation" input for context
 
-### Notifications & Reports
-- Send weekly progress emails to user
+### Recurring Habits ✅ Done
+- Steps can be marked as recurring: Daily / Weekly / Monthly
+- Daily habits show current week (Mon–Sun) with dot per day
+- Weekly/Monthly habits grow dots based on streak
+- Streak counter shown (🔥 N day/week/month streak)
+- Checkbox to mark today's habit done — resets each period
+- Completions stored per-day in step_completions table
+
+### Auth ✅ Done
+- Email/password login and signup
+- Auth protection on dashboard and visualizer pages
+- Logout button
+
+### Hero Visualizer ✅ Done
+- Dedicated /visualizer screen
+- Horizontal timeline with avatar moving from Reality → Expectation
+- Overall progress = average of all goal progress %
+- Each goal shown with current value vs target value and deadline
+
+### Notifications & Reports — Not yet done
+- Weekly progress emails to user (planned: Resend integration)
 
 ---
 
